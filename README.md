@@ -1,5 +1,5 @@
 # Steam-X-Ray-in-Unity
-
+ ```cpp
 Shader "Custom/X-Ray" {
 	Properties{
 		_MainTex_Normal("Albedo Normal (RGB)", 2D) = "white" {}
@@ -53,7 +53,9 @@ Shader "Custom/X-Ray" {
 	}
 		FallBack "Diffuse"
 }
+```
 
+```cpp
 //in c#
 
 using System.Collections;
@@ -79,3 +81,4 @@ public class NewBehaviourScript : MonoBehaviour
         material.SetVector("_Pos", new Vector4(pos.x, pos.y, 0, 0));
     }
 }
+```
