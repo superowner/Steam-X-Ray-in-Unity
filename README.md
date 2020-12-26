@@ -1,10 +1,11 @@
 # Steam-X-Ray-in-Unity
+//PS:有人知道Properties如何添加vector2属性请告诉我，我好像没找到，于是用了一个vector4
  ```cpp
 Shader "Custom/X-Ray" {
 	Properties{
 		_MainTex_Normal("Albedo Normal (RGB)", 2D) = "white" {}
 		_MainTex_Sexy("Albedo Sexy (RGB)", 2D) = "white" {}
-	    _MaskTex("Mask", 2D) = "white" {} //add
+	        _MaskTex("Mask", 2D) = "white" {} //add
 		_EdgeBlurLength("EdgeBlur Length", Float)= 0.008
 		_MaskRadius("Mask Radius", Float)= 0.15
 		_Pos("Position", Vector) = (0.5,0.5,0,0)
